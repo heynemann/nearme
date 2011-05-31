@@ -21,6 +21,12 @@ class Place(Document):
     timezone = StringField()
     point = GeoPointField()
 
+    meta = {
+        'indexes': [
+            'point'
+        ]
+    }
+
     #return {
         #'geonameid': values[0],
         #'name': values[1],

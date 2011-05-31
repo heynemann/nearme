@@ -65,7 +65,6 @@ class SyncDBCommand(BaseCommand):
         }
     
     def save_place(self, values):
-
         place = Place.from_values(values)
         place.save()
 
